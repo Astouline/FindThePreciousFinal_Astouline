@@ -1,0 +1,191 @@
+/* Sommaire
+  body
+    navbar
+    carousel
+  footer*/
+
+@font-face {
+  font-family: 'aniron';
+  src:url('police_titres/anicb.ttf') format('truetype');
+}
+*{
+  font-family: 'aniron';
+}
+
+@font-face{
+  font-family: "symbol";
+  src:url('symboles_titres/tnganb.ttf') format('truetype');
+}
+
+
+
+                                /* Body */
+          /* navbar */
+
+.container-fluid{
+  margin: 0;
+}
+
+.navbar-header {
+  background-color: #F5631E;
+  width: 100%;
+  height: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+
+.navbar-nav{
+  text-align: center;
+}
+
+
+        /* color text navbar */
+.onglet{
+  text-decoration: none;
+  color: white;
+  margin-top: -50px;
+}
+
+.onglet:hover {
+  text-decoration: underline;
+  background: #F5631E;
+}
+
+                              /* carousel */
+
+
+
+
+
+                              /* pills */
+#pills{
+  background-image: url("_bg_light.png");
+}
+
+/* symbol IJ */
+h3.symbol {
+  display: inline-table;
+  font-family: 'symbol';
+  color: #F5631E;
+  vertical-align: 30%;
+}
+
+
+h3.alive{
+  font: bold;
+  font-size: 0.5em;
+}
+
+h3.inline{
+  display: inline-table;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.title-pills{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Thumbnails */
+.picture{
+  border: 10px solid black;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.thumbnails{
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  margin-left: 8%;
+  max-width: 506px;
+  background-color: #000000; /* rendu fond noir perso*/
+}
+
+.frame1{
+  position: absolute;
+  top: 10px;
+  background-color: white;
+  border: solid 1px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: calc(2vw);
+  max-width: 480px;
+  height: auto;
+  margin-top: calc(1vw);
+  margin-left: calc(1vw);
+  z-index: 2;
+}
+
+
+.b_name{
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-size: calc(2vw);
+  margin-top: calc(-14vw);
+  margin-left: calc(8vw);
+  z-index: 2;
+}
+
+.s_name{
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-size: calc(1vw);
+  margin-top: calc(-2vw);
+  margin-left: calc(10vw);
+  visibility: hidden;
+}
+
+
+.frame2{
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  font-size: calc(2vw);
+  margin-top: 40px;
+  margin-left: 11vw;
+  color: #F5631E;
+}
+
+.coins{
+  color: #F5631E;
+}
+
+.description{
+  text-align: center;
+  font-size: calc(1.2vw);
+  color: grey;
+}
+
+.dead{
+  margin-left: -1vw;
+  text-decoration: line-through;
+}
+
+
+.thumbnails:hover .picture{
+  opacity: 1;
+}
+
+.thumbnails:hover .frame{
+  visibility: hidden;
+}
+
+
+.thumbnails:hover .b_name{
+  visibility: hidden;
+}
+
+.thumbnails:hover .s_name{
+  visibility: visible;
+}
+
+
+  /* Footer */
